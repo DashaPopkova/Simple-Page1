@@ -1,0 +1,877 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link href="https://allfont.ru/allfont.css?fonts=matura-mt-script-capitals" 
+rel="stylesheet" type="text/css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+margin:0;
+}
+.main {
+ top: 63px;
+ height=100%;
+}
+.main1 {
+ padding: 15px;
+ margin-top: -30px;
+ height=100%;
+ background: #B3FF19;
+}
+.main2 {
+ background: #B3FF19;
+ display: flex;
+ flex-direction: column;
+ flex-basis: content;
+}
+.main3 {
+ padding: 15px;
+ height=100%;
+ background: #B3FF19;
+}
+
+
+
+
+
+.radius {
+ border: 1px #FFB3F2; 
+ padding: 15px; 
+ background: linear-gradient(#FFB3F2, #CC0044);
+}
+.radius1{
+ border: 1px #FFB3F2; 
+ padding: 15px; 
+ background: linear-gradient(#FFB3F2, black);
+}
+
+
+.left-sidebar{
+ width: 32%;
+ height: 50%;
+}
+.center-sidebar{
+ margin-left: 1.5%;
+ width: 32%;
+ height: 50%;
+}
+.right-sidebar{
+ margin-left: 1.5%;
+
+ width: 32%;
+ height: 50%;
+}
+.main-sidebar{
+ width: 100%;
+ height: 100%;
+}
+.right-sidebar1{
+ margin-left: 50%;
+ width: 50%;
+ height: auto%;
+}
+#block {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+#block:hover {
+  height: auto;
+  cursor: pointer;
+}
+
+.container {
+ display: flex;
+ flex-direction: row;
+}
+.flex1{
+ display: flex;
+ flex-direction: column;
+ margin=0;
+}
+.flex{
+ display: flex;
+ flex-direction: column;
+}
+.flexob{
+ display: flex;
+ flex-direction: row;
+}
+<!--.flex2{
+ display: flex;
+ margin=0;
+ flex-grow: 3;
+}
+.flex3{
+ display: flex;
+ margin=0;
+ flex-grow: 1;
+}
+-->
+
+.containerer {
+ text-align: center;
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+.containerer1 {
+ text-align: center;
+ margin-top: 30px;
+ text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.navbar {
+ overflow: hidden;
+ background-color: #57f542;
+ position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 4;
+}
+b {
+ top: 0.25%;
+ left: 39%;
+ font-family: 'Matura MT Script Capitals', arial;
+ font-size: 70px;
+ color: white;
+}
+i{
+ font-size: 40px;
+ color: white;
+}
+o{
+ font-size: 23px;
+ color: white;
+}
+v{
+ font-family: "Comic Sans MS", "Comic Sans", cursive;
+ font-size: 30px;
+ color: white;
+}
+#cursive{
+ font-family: 'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',
+cursive;
+}
+n{
+ font-family: "Comic Sans MS", "Comic Sans", cursive;
+ font-size: 15px;
+ color: white;
+}
+l{
+ font-family: "Comic Sans MS", "Comic Sans", cursive;
+ font-size: 30px;
+ color: black;
+}
+w{
+ font-family: "Comic Sans MS", "Comic Sans", cursive;
+ font-size: 15px;
+ color: black;
+}
+#myimage{
+-webkit-filter: drop-shadow(2px 2px 2px #4682B4);
+}
+#myimage1{
+-webkit-filter: drop-shadow(4px 4px 4px #512673);
+}
+#myimage2{
+-webkit-filter: drop-shadow(4px 4px 4px #512673);
+}
+#myimage3{
+-webkit-filter: drop-shadow(4px 4px 4px #512673);
+}
+#myimage4{
+-webkit-filter: drop-shadow(4px 4px 4px #661f1f);
+}
+#myimage5{
+-webkit-filter: drop-shadow(4px 4px 4px #661f1f);
+}
+#myimage6{
+-webkit-filter: drop-shadow(4px 4px 4px #661f1f);
+}
+#myimage7{
+-webkit-filter: drop-shadow(4px 4px 4px #4682B4);
+}
+#myimage8{
+-webkit-filter: drop-shadow(4px 4px 4px #4682B4);
+}
+#myimage9{
+-webkit-filter: drop-shadow(4px 4px 4px #4682B4);
+}
+#myimage10{
+-webkit-filter: drop-shadow(4px 4px 4px #a19b05);
+}
+#myimage11{
+-webkit-filter: drop-shadow(4px 4px 4px #a19b05);
+}
+#myimage12{
+-webkit-filter: drop-shadow(4px 4px 4px #a19b05);
+}
+#myimage13{
+-webkit-filter: drop-shadow(4px 4px 4px black);
+}
+#myimage14{
+-webkit-filter: drop-shadow(4px 4px 4px black);
+}
+#myimage15{
+-webkit-filter: drop-shadow(4px 4px 4px black);
+}
+#myimage16{
+ position: absolute;
+ margin-top:5%;
+ width: 65%;
+height: 65%;
+-webkit-filter: drop-shadow(2px 2px 2px #4682B4);
+
+}
+.ppp{
+padding:23px;
+}
+.text1{
+ width:200px;
+ height:100px;
+}
+.navbar a {
+ float: left;
+ display: block;
+ color: #ddd;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+
+}
+.navbar a:hover {
+ color: black;
+}
+.navbar-brand{
+ bg-light;
+}
+.scale {
+ transition: 1.2s;
+}
+.scale:hover {
+ transform: scale(1.8); 
+}
+.topnav-right {
+ float: right;
+}
+.scale1 {
+ transition: 1s;
+}
+.scale1:hover {
+ transform: scale(1.1); 
+}
+
+
+
+#slides{
+ position: relative;
+ text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+ top: 50px;
+ height: 1110px;
+}
+.slide{ 
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: auto%;
+ opacity: 0;
+ z-index: 1;
+ filter: drop-shadow(0 0 13px rgba(0,0,100,0.5));
+ -webkit-transition: opacity 1s;
+ -moz-transition: opacity 1s;
+ -o-transition: opacity 1s;
+ transition: opacity 1s;
+}
+.showing{
+ opacity: 1;
+ z-index: 2;
+}
+.slide{
+ box-sizing: border-box;
+}
+
+#slides1{
+ position: relative;
+ height: 1115px;
+ text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+ top: 50px;
+
+}
+.slide1{ 
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: auto%;
+ opacity: 0;
+ z-index: 1;
+ filter: drop-shadow(0 0 13px rgba(0,0,100,0.5));
+ -webkit-transition: opacity 1s;
+ -moz-transition: opacity 1s;
+ -o-transition: opacity 1s;
+ transition: opacity 1s;
+}
+.showing1{
+ opacity: 1;
+ z-index: 2;
+}
+.slide1{
+ box-sizing: border-box;
+}
+
+
+#slides2{
+ position: relative;
+ text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+ top: 50px;
+ height: 1100px;
+}
+.slide2{ 
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: auto%;
+ opacity: 0;
+ z-index: 1;
+ filter: drop-shadow(0 0 13px rgba(0,0,100,0.5));
+ -webkit-transition: opacity 1s;
+ -moz-transition: opacity 1s;
+ -o-transition: opacity 1s;
+ transition: opacity 1s;
+}
+.showing2{
+ opacity: 1;
+ z-index: 2;
+}
+.slide2{
+ box-sizing: border-box;
+}
+
+
+#slides3{
+ position: relative;
+ text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+ top: 50px;
+ height: 1110px;
+}
+.slide3{ 
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: auto%;
+ opacity: 0;
+ z-index: 1;
+ filter: drop-shadow(0 0 13px rgba(0,0,100,0.5));
+ -webkit-transition: opacity 1s;
+ -moz-transition: opacity 1s;
+ -o-transition: opacity 1s;
+ transition: opacity 1s;
+}
+.showing3{
+ opacity: 1;
+ z-index: 2;
+}
+.slide3{
+ box-sizing: border-box;
+}
+
+#slides4{
+ position: relative;
+ text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+ top: 50px;
+ height: 1110px;
+}
+.slide4{ 
+ position: absolute;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: auto%;
+ opacity: 0;
+ z-index: 1;
+ filter: drop-shadow(0 0 13px rgba(0,0,100,0.5));
+ -webkit-transition: opacity 1s;
+ -moz-transition: opacity 1s;
+ -o-transition: opacity 1s;
+ transition: opacity 1s;
+}
+.showing4{
+ opacity: 1;
+ z-index: 2;
+}
+.slide4{
+ box-sizing: border-box;
+}
+
+
+</style>
+<script>
+window.addEventListener('load',function () {
+ var slides = document.querySelectorAll('#slides .slide');
+ var currentSlide = 0;
+ var slideInterval = setInterval(nextSlide,2000);
+ function nextSlide() {
+ slides[currentSlide].className = 'slide';
+ currentSlide = currentSlide + 1;
+ if (slides.length == currentSlide) { currentSlide = 0; }
+ slides[currentSlide].className = 'slide showing';
+ }
+});
+
+window.addEventListener('load',function () {
+ var slides1 = document.querySelectorAll('#slides1 .slide1');
+ var currentSlide1 = 0;
+ var slideInterval1 = setInterval(nextSlide1,2000);
+ function nextSlide1() {
+ slides1[currentSlide1].className = 'slide1';
+ currentSlide1 = currentSlide1 + 1;
+ if (slides1.length == currentSlide1) { currentSlide1 = 0; }
+ slides1[currentSlide1].className = 'slide1 showing1';
+ }
+});
+
+window.addEventListener('load',function () {
+ var slides2 = document.querySelectorAll('#slides2 .slide2');
+ var currentSlide2 = 0;
+ var slideInterval2 = setInterval(nextSlide2,2000);
+ function nextSlide2() {
+ slides2[currentSlide2].className = 'slide2';
+ currentSlide2 = currentSlide2 + 1;
+ if (slides2.length == currentSlide2) { currentSlide2 = 0; }
+ slides2[currentSlide2].className = 'slide2 showing2';
+ }
+});
+
+window.addEventListener('load',function () {
+ var slides3 = document.querySelectorAll('#slides3 .slide3');
+ var currentSlide3 = 0;
+ var slideInterval3 = setInterval(nextSlide3,2000);
+ function nextSlide3() {
+ slides3[currentSlide3].className = 'slide3';
+ currentSlide3 = currentSlide3 + 1;
+ if (slides3.length == currentSlide3) { currentSlide3 = 0; }
+ slides3[currentSlide3].className = 'slide3 showing3';
+ }
+});
+
+window.addEventListener('load',function () {
+ var slides4 = document.querySelectorAll('#slides4 .slide4');
+ var currentSlide4 = 0;
+ var slideInterval4 = setInterval(nextSlide4,2000);
+ function nextSlide4() {
+ slides4[currentSlide4].className = 'slide4';
+ currentSlide4 = currentSlide4 + 1;
+ if (slides4.length == currentSlide4) { currentSlide4 = 0; }
+ slides4[currentSlide4].className = 'slide4 showing4';
+ }
+});
+</script>
+
+</head>
+<body>
+<div class="navbar">
+<div id="myimage">
+<a class="navbar-brand" href="#скуби-ду">
+    <img src="https://slovnet.ru/wp-content/uploads/2019/10/16-11.png" width="30" height="30" 
+alt="" class="scale">
+</a>
+</div>
+<div id="myimage">
+<a class="navbar-brand" href="#скуби-ду">
+    <img src="https://frankfurt.apollo.olxcdn.com/v1/files/0gbwm3r5n46e-KZ/image;s=1080x859" width="30" height="30" 
+alt="" class="scale">
+</a>
+</div>
+
+
+<div class="topnav-right">
+ <a href="#search">Say "hi" to Igor</a>
+ <a href="#about">About</a>
+ </div>
+</div>
+
+<div class="flex1">
+
+<div class="main">
+<h1>
+
+<img src="https://slovnet.ru/wp-content/uploads/2019/10/7-2.jpg"  
+width=100% height=100% alt="">
+</div>
+
+<div class="main1">
+<div class="flex">
+<div class="containerer">
+<p><a name="Скуби-Ду"></p>
+<b>Мультфильм Скуби-ду</b>
+</div>
+<p>
+<v >«Скуби-Ду» (Scooby-Doo) — серия мультсериалов и полнометражных мультфильмов.
+Сюжет большинства мультфильмов происходит вокруг пса Скуби и четырёх подростков-
+членов корпорации «Тайна»: Фреда, Шэгги, Дафны и Велмы. В некоторых эпизодах героям
+помогают в поисках улик обычные люди, учёные и даже звёзды. Прибыв на место в 
+«Фургончике Тайн», они сталкиваются с призраком, чудовищем или другим сверхъестественным 
+существом, которое терроризирует местное население. После исследования, поисков улик и 
+опроса подозреваемых герои начинают понимать, что призрак или другое паранормальное явление 
+на самом деле является обманом.
+</v>
+</p>
+
+<div class="container">
+ <aside class="left-sidebar"> <div style="border-radius: 30px;" class="radius">
+<div id="myimage1">
+<audio id="audio1" src="C:\Users\Apollo Justice\Downloads\op1.mp3" autoplay loop></audio>
+<script>
+var playing1=false;
+document.getElementById("myimage1").addEventListener("click", function() { 
+if(playing1){ audio1.pause();
+playing1=false;
+}
+else{audio1.play()
+playing1=true;
+}
+});
+</script>
+<img src="https://www.desicomments.com/wp-content/uploads/2017/02/Scooby-Doo-Eating-Burger.png" class="scale1" width=100%=w 
+height=100% alt=""></div><n>
+Скуберт Фон Дуенхеймер(Скуби-Ду)-пёс-детектив, помощник Мистической корпорации «Тайна» и лучший 
+друг Шегги.Скуби весьма труслив и беззаботен, он очень легко и просто относиться к работе, 
+но именно эти черты каждый раз помогают скуби и его сотрудникам расследовать очередное 
+сложное дело. Хотя работа Скуби Ду страшна и опасна, этот забавный пёс всегда остается 
+смешным и веселым. В своей компании его очень любят за его смешные шутки. А так же Скуби 
+Ду очень влюбчив, больше всего ему нравятся девушки-овчарки, ведь они так похожи на него.
+</n> </div></aside>
+
+
+
+<aside class="center-sidebar"> <div style="border-radius: 30px;" class="radius">
+<div id="myimage2">
+<audio id="audio2" src="C:\Users\Apollo Justice\Downloads\song1.mp3" autoplay loop></audio>
+
+<script>
+var playing2=false;
+document.getElementById("myimage2").addEventListener("click", function() { 
+if(playing2){ audio2.pause();
+playing2=false;
+}
+else{audio2.play()
+playing2=true;
+}
+});
+</script>
+<img src="https://vignette.wikia.nocookie.net/scoobydooandguesswho/images/4/45/106ABoy.png/revision/latest?cb=20190816002710" 
+class="scale1" width=100% height=100% 
+alt=""></div><n>
+Норвилл Роджерс (Шэгги)-член "Мистической корпорации", лучший друг Скуби-Ду.Выступает в 
+качестве человека, который очень боится монстров, ведьм, приведений, но зато он очень 
+любит поесть, в основном собачье печенье. Сам по себе герой привлекает к себе внимание 
+веселым характером, благодаря которому зритель может отвлечься от проблем и расслабиться, 
+получая удовольствие от легких шуток.Постоянная одежда Шегги, зеленая футболка и коричневые 
+джинсы или шорты того же цвета 
+</n> </div></aside>
+
+
+
+<aside class="right-sidebar"> <div style="border-radius: 30px;" class="radius">
+<div id="myimage3">
+<audio id="audio3" src="C:\Users\Apollo Justice\Downloads\battle1.mp3" autoplay loop></audio>
+<script>
+var playing3=false;
+document.getElementById("myimage3").addEventListener("click", function() { 
+if(playing3){ audio3.pause();
+playing3=false;
+}
+else{audio3.play()
+playing3=true;
+}
+});
+</script>
+<img src="https://i.pinimg.com/originals/d1/59/8e/d1598ec0090078991e5249f37e592c00.jpg" class="scale1" width=100% height=100% 
+alt=""></div><n>
+Дафна Энн Блэйк(Дафна)-Дафни —вечно юное недоразумение, создающее проблемы и затрудняющее 
+выполнение миссий остальным занятым расследованиями героям мультика Скуби-Ду.Дафни 
+крайне невезучая, из-за чего всё время куда-нибудь падает, спотыкается, случайно выдаёт 
+монстру команду и её похищают чаще всех других членов. Она уверенная в себе и начала играть 
+активную роль после того, как узнала о самозащите.Она модная и разносторонняя. Будучи не 
+такой умной как Велма,она решает проблемы другими путями.
+</n> </div></aside>
+</div>
+</div>
+
+
+</div>
+<div class="main2">
+<div id="slides">
+ <img src="https://theblueprint.ru/upload/17389/social_image.jpg" class="slide showing">
+ <img src="https://gamerwall.pro/uploads/posts/2022-03/1648546093_37-gamerwall-pro-p-skubi-du-fon-krasivie-43.png" 
+class="slide ">
+ <img src="https://cdn.shazoo.ru/122158_KSfzbKZW98_scooby_doo.jpg" class="slide ">
+ <img src="https://i.pinimg.com/originals/a9/f4/89/a9f489c070d5a16ea469cf1df4d4268a.jpg" class="slide ">
+</div></div>
+<div class="main3">
+
+<div class="containerer">
+<p><a name="Скуби-Ду"></p>
+<b></b>
+</div>
+<p>
+<v >
+
+</v>
+</p>
+
+<div class="container">
+ <aside class="left-sidebar"> <div style="border-radius: 30px;" class="radius1">
+<div id="myimage4">
+<audio id="audio4" src="C:\Users\Apollo Justice\Downloads\op2.mp3" autoplay loop></audio>
+<script>
+var playing4=false;
+document.getElementById("myimage4").addEventListener("click", function() { 
+if(playing4){ audio4.pause();
+playing4=false;
+}
+else{audio4.play()
+playing4=true;
+}
+});
+</script>
+<img src="https://slovnet.ru/wp-content/uploads/2019/10/4-16.png" class="scale1" width=100%=w height=100% 
+alt=""></div><n>
+Фрэдэрик Герман Джонс(Фред Джонс)-лидер корпорации "Тайна".Часто просит группу разделиться, 
+чтобы найти ключи к разгадке. Чаще Фред идет с Дафной, а Шеги со Скуби. Иногда Велма 
+присоединяется к Шеги и Скуби Ду.Фред всегда носит голубую или белую рубашку и голубые брюки, 
+иногда надевая сверху белую кофту.Фреди обладает крепким телосложением.Фред обычно пропускает 
+мимо ушей все романтические намеки Дафны, хотя довольно охотно реагирует, если они исходят 
+от девушек с которыми Дафна не ладит
+</n> </div></aside>
+
+
+<aside class="center-sidebar"> <div style="border-radius: 30px;" class="radius1">
+<div id="myimage5">
+<audio id="audio5" src="C:\Users\Apollo Justice\Downloads\song2.mp3" autoplay loop></audio>
+<script>
+var playing5=false;
+document.getElementById("myimage5").addEventListener("click", function() { 
+if(playing5){ audio5.pause();
+playing5=false;
+}
+else{audio5.play()
+playing5=true;
+}
+});
+</script>
+<img src="https://vgtimes.ru/uploads/posts/2022-11/1667595954_egts4bjuwaaj3j4.jpg" class="scale1" width=100%=w height=100% 
+alt=""></div><n>
+Вэльма Дэйс Динкли(Велма Динкли)-Девочка-гений,член корпорации "Тайна".Очень умный сангвиник. 
+Вэльма очень увлечена тайнами.Вэльма часто теряет очки, что говорит о том, что она немного 
+рассеянная. Вэльма очень серьёзный скептик и придерживается философии, что всему есть 
+рациональное объяснение, но признаёт, что это скучно.
+</n> </div></aside>
+<aside class="center-sidebar"> <div style="border-radius: 30px;" class="radius1">
+<div id="myimage5">
+<audio id="audio5" src="C:\Users\Apollo Justice\Downloads\song2.mp3" autoplay loop></audio>
+<script>
+var playing5=false;
+document.getElementById("myimage5").addEventListener("click", function() { 
+if(playing5){ audio5.pause();
+playing5=false;
+}
+else{audio5.play()
+playing5=true;
+}
+});
+</script>
+<img src="https://image.krasview.ru/video/4a4dc1ca5a423ad/_.jpg"
+ class="scale1" width=100%=w height=100% 
+alt=""></div><n>
+Скрэппи Корнэлиус Ду(Скрэппи-Ду)-щенок.Временный член корпорации "Тайна".Племянник Скуби-Ду.
+Скрэппи - отчаянно храбрый и умный щенок,очень энергичный. Он очень любит своего дядю Скуби-Ду, говоря, что 
+когда он вырастет он хочет быть таким же как и Скуби-Ду .Скрэппи очень хорошо развит физически,
+так как он одной лапой может держать в одно время обоих и Шегги и Скуби-Ду
+</n> </div></aside>
+
+
+</div>
+</div>
+
+
+
+<div class="main4">
+<div id="slides1" >
+ <img src="https://gamerwall.pro/uploads/posts/2022-02/1645840458_29-gamerwall-pro-p-monstri-iz-skubi-du-krasivie-oboi-33.jpg" 
+class="slide1 showing1">
+ <img src="https://horrorzone.ru/uploads/_pages2/73452/scooby-doo-horror-46.jpg" 
+class="slide1 ">
+ <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/71a886b7-38ed-4584-8b0f-8207b69a65d5/1920x" 
+class="slide1 ">
+ <img src="https://vignette.wikia.nocookie.net/loveinterest/images/8/84/Fred_%26_Daphne_-_Scooby-Doo!_Abracadabra-Doo.jpg/revision/latest/scale-to-width-down/2000?cb=20170624232120" 
+class="slide1 ">
+ <img src="https://vignette.wikia.nocookie.net/scoobydoo/images/2/25/Scooby%2C_Shaggy%2C_and_Velma_%28SDMI%29.png/revision/latest?cb=20170115201235" class="slide1 ">
+ <img src="https://i.pinimg.com/originals/68/b8/84/68b88469c94a3dd68462d607e066a009.jpg" 
+class="slide1 ">
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="main11">
+<div class="containerer1">
+<p><a name="search" class="ppp"></p>
+<b> Команда Скуби-Ду</b>
+<i id="cursive"><p> Привет, друг. Мы тебе расскажем много историй, как боролись с приведениями, 
+что Скуби кушал на завтрак и много всего. Просто напиши и мы обязательно ответим.</p></i></div>
+
+<div class="flexob">
+<div id="myimage16">
+
+<audio id="audio16" src="C:\Users\Apollo Justice\Downloads\velvetroom.mp3" autoplay loop></audio>
+<script>
+var playing16=false;
+document.getElementById("myimage16").addEventListener("click", function() { 
+if(playing16){ audio16.pause();
+playing16=false;
+}
+else{audio16.play()
+playing16=true;
+}
+});
+</script>
+  <img src="https://theblueprint.ru/upload/17389/social_image.jpg" class="scale1" width=68% height=auto>
+</div>
+</div>
+
+<div class="right-sidebar1">
+ <o id="cursive">"?</o>
+ <form action="mailto:dasha.popkova.03@bk.ru""form.php">
+<div class="containerer1">
+<o id="cursive">Как тебя зовут?</o><p>
+ <input type="text"></p>
+<p><o id="cursive">Хорошо, Сколько тебе лет?</o></p>
+<p><input list="weak-spots">
+ <datalist id="weak-spots">
+    <option value="1">
+    <option value="2">
+    <option value="3">
+    <option value="4">
+    <option value="5">
+    <option value="6">
+    <option value="7">
+    <option value="8">
+    <option value="9">
+    <option value="10">
+    <option value="11">
+    <option value="12">
+    <option value="13">
+    <option value="14">
+</datalist></p>
+<o id="cursive">Не стесняйся, пиши, задавай любые вопросы</o>
+<p><textarea rows="10" cols="45" name="text"></textarea></p>
+<o id="cursive">Великолепно. Все, что тебе осталось - это отправить.</o>
+<p><input type="submit"></p>
+</div>
+</form>
+</div>
+
+
+</div>
+
+
+
+
+</div>
+</h1>
+<script>
+
+function play() {
+  var audio1 = document.getElementById("audio1");
+  audio1.loop=true;
+  audio1.play();
+}
+function play() {
+  var audio2 = document.getElementById("audio2");
+  audio2.loop=true;
+  audio2.play();
+}
+function play() {
+  var audio3 = document.getElementById("audio3");
+  audio3.loop=true;
+  audio3.play();
+}
+function play() {
+  var audio4 = document.getElementById("audio4");
+  audio4.loop=true;
+  audio4.play();
+}
+function play() {
+  var audio5 = document.getElementById("audio5");
+  audio5.loop=true;
+  audio5.play();
+}
+function play() {
+  var audio6 = document.getElementById("audio6");
+  audio6.loop=true;
+  audio6.play();
+}
+function play() {
+  var audio7 = document.getElementById("audio7");
+  audio7.loop=true;
+  audio7.play();
+}
+function play() {
+  var audio8 = document.getElementById("audio8");
+  audio8.loop=true;
+  audio8.play();
+}
+function play() {
+  var audio9 = document.getElementById("audio9");
+  audio9.loop=true;
+  audio9.play();
+}
+function play() {
+  var audio10 = document.getElementById("audio10");
+  audio10.loop=true;
+  audio10.play();
+}
+function play() {
+  var audio11 = document.getElementById("audio11");
+  audio11.loop=true;
+  audio11.play();
+}
+function play() {
+  var audio12 = document.getElementById("audio12");
+  audio12.loop=true;
+  audio12.play();
+}
+function play() {
+  var audio13 = document.getElementById("audio13");
+  audio13.loop=true;
+  audio13.play();
+}
+function play() {
+  var audio14 = document.getElementById("audio14");
+  audio14.loop=true;
+  audio14.play();
+}
+function play() {
+  var audio15 = document.getElementById("audio15");
+  audio15.loop=true;
+  audio15.play();
+}
+function play() {
+  var audio16 = document.getElementById("audio16");
+  audio16.loop=true;
+  audio16.play();
+}
+</script>
+</body>
+</html>
